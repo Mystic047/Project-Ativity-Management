@@ -57,7 +57,8 @@
                                     <tbody>
                                         <tr>
                                             <td>สถานะเปิดปิด</td>
-                                            <td>ชื่อกิจจัดโดย .... สถานที่ ......
+                                            <td>ชื่อกิจจัดโดย .... <br>
+                                                สถานที่ ......
                                             </td>
                                             <td>รับสมัครวันที่ .... จำนวนที่รับ ......
                                             </td>
@@ -78,7 +79,7 @@
                     <div class="col-md-6">
                         <div class="card bg-white border-1">
                             <div class="card-header">
-                                Card 1
+                                นักศึกษาที่มีชั่วโมงกิจกรรมมากที่สุด ( TOP 5)
                             </div>
                             <div class="card-body">
                                 Content for card 1
