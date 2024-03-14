@@ -18,7 +18,7 @@
 
         /* ปรับลักษณะของ Navbar ให้แบ่งเป็นสองส่วน */
         .top-navbar {
-            background-color: rgba(255, 208, 40, 255);
+            background-color: #8e12e158;
             /* สีพื้นหลังส่วนบน */
         }
 
@@ -27,7 +27,7 @@
             /* สีพื้นหลังส่วนล่าง */
         }
 
-        <style>
+        <styl>
 
         /* ปรับระยะห่างระหว่างไอคอนและข้อความในเมนู Navbar */
         .nav-link i {
@@ -40,8 +40,11 @@
             margin-right: 2rem;
             /* ปรับระยะห่างด้านขวาของหัวข้อเมนู */
         }
+        .navbar-nav .nav-link {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
     </style>
-    </style>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
 </head>
 
 <body>
