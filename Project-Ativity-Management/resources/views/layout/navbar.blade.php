@@ -63,7 +63,10 @@
                 <ul class="navbar-nav ms-auto">
                     <!-- เพิ่มปุ่ม Login -->
                     <li class="nav-item">
-                        <button class="btn btn-outline-success me-2" type="button">Login</button>
+                        <button class="btn btn-primary btn-rouded mb-2 mr-2" type="button">Login <i class="fas fa-user-graduate"></i></button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success me-2" type="button">Login <i class="fas fa-user-tie"></i></button>
                     </li>
                 </ul>
             </div>
