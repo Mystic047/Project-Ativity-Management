@@ -22,3 +22,6 @@ Route::get('/profile', function () {
 Route::get('/filedowload', function () {
     return view('filedowload');
 });
+Route::get('/activity', function () {
+    return view('activity');
+});
