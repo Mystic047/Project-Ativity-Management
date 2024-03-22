@@ -21,7 +21,7 @@
 </head>
 @extends('layout.master')
 @section('content')
-<body>
+<body style="background-color:#f5f5f5;">
     <div class="container">
         <div class="row mt-4">
             <div class="container">
