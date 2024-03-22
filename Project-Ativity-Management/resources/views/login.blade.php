@@ -29,7 +29,7 @@
                               <img src="https://science.bru.ac.th/wp-content/uploads/2018/03/sci-logo-1.jpg" alt="BootstrapBrain Logo" width="175" height="57">
                             </a>
                           </div>
-                          <h4 class="text-center">Welcome back you've been missed!</h4>
+                          <h4 class="text-center">ระบบบริหารงานกิจกรรมนักศึกษา</h4>
                         </div>
                       </div>
                     </div>
