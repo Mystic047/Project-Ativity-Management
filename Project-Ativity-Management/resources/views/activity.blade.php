@@ -11,9 +11,48 @@
     <!-- Link to your custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/activity.css')}}">
 </head>
+<style>
+    .card {
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 80px; /* ปรับโค้งมนของการ์ด */
+    /* เพิ่มเงาเล็กน้อย */
+}
+    .widget-heading {
+        font-size: 1.2rem; /* Larger font size for the heading */
+        color: #333; /* Adjust text color as needed */
+        margin-bottom: 1rem; /* Space below the heading */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the heading and icon */
+    }
+
+    .fa-users {
+        margin-right: 0.5rem; /* Space between the icon and text */
+    }
+
+    .counter-content {
+        background: #FFF; /* Background color for the counters */
+        border-radius: 10px; /* Rounded corners for the counters */
+        display: inline-block;
+    }
+
+    .s-counter {
+        font-size: 2.5rem; /* Larger font size for the counter number */
+        color: #007bff; /* Color of the counter number */
+    }
+
+    .s-counter-text {
+        color: #333333; /* Text color for the counter label */
+        font-weight: bold;
+    }
+
+    body {
+        background-color: #f5f5f5; /* Set background color */
+    }
+</style>
 @extends('layout.master')
 @section('content')
-    <body>
+    <body style="background-color:#f5f5f5;">
         <br>
         <div class="container">
             <div class="row layout-top-spacing layout-spacing">
@@ -22,8 +61,8 @@
                     <div class="card card-left">
                         <div class="card-body">
                             <div class="widget-heading mb-4">
-                                <h5 class="">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา 2566 <span
-                                        class="badge badge-warning">95 View</span></h5>
+                                <h3 class="">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา 2566 <span
+                                        class="badge badge-warning">95 View</span></h3>
                             </div>
                             <div class="widget-content border-tab">
                                 <ul class="nav nav-tabs mt-3" id="border-tabs" role="tablist">
@@ -41,13 +80,14 @@
                                 <div class="tab-content mb-4" id="border-tabsContent">
                                     <div class="tab-pane fade show active" id="border-home" role="tabpanel"
                                         aria-labelledby="border-home-tab">
-                                        <h4 class="mb-4"><i class="bi bi-journals"></i> เกี่ยวกับกิจกรรม</h4>
+                                        <h4 class="mb-4"><i class="fas fa-info-circle"></i> เกี่ยวกับกิจกรรม</h4>
+
                                         <div class="row">
                                             <div class="col-12 col-md-3">
                                                 ชื่อกิจกรรม
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา 2566</span>
                                             </div>
 
@@ -55,7 +95,7 @@
                                                 ประเภทและลักษณะของกิจกรรม
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">
                                                     กิจกรรมทั่วไป
                                                 </span>
@@ -64,7 +104,7 @@
                                                 คุณสมบัติผู้สมัคร
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">นักศึกษามหาวิทยาลัยภาคตะวันออกเฉียงเหนือ</span>
                                             </div>
 
@@ -72,98 +112,74 @@
                                                 สังกัด
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary"> กิจกรรมส่วนกลาง (มหาวิทยาลัย)
                                                 </span>
                                             </div>
 
                                         </div>
                                         <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
-                                        <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
-                                        <h4 class="mb-4 mt-4"><i class="bi bi-person-circle"></i> การรับสมัคร</h4>
+
+                                        {{-- <h4 class="mb-4 mt-4"><i class="fas fa-user"></i> การรับสมัคร</h4> --}}
+
                                         <div class="row">
                                             <div class="col-12 col-md-3">
                                                 จำนวนที่รับสมัคร
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">250</span>
                                             </div>
 
                                             <div class="col-12 col-md-3">
-                                                ค่าชั่วโมง/ครั้ง
+                                                ค่าชั่วโมง
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
-                                                <span class="text-primary">8 ชั่วโมง (40 คะแนน)</span>
+                                                <i class="fa-solid fa-play"></i>
+                                                <span class="text-primary">8 ชั่วโมง</span>
                                             </div>
 
                                             <div class="col-12 col-md-3">
                                                 เปิดรับสมัคร
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">25 กุมภาพันธ์ 2567</span>
                                             </div>
-
-                                            <div class="col-12 col-md-3">
-                                                ปิดรับสมัคร
-                                            </div>
-                                            <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
-                                                <span class="text-primary">2 มีนาคม 2567</span>
-                                            </div>
-
                                             <div class="col-12 col-md-3">
                                                 สถานะ
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="badge badge-danger">ปิดรับสมัคร</span>
                                             </div>
                                         </div>
-                                        <h4 class="mb-4 mt-4"><i class="bi bi-calendar-week"></i> กำหนดการจัดกิจกรรม</h4>
-                                        <div class="row">
-                                            <div class="col-12 col-md-3">
-                                                ปีการศึกษา
-                                            </div>
-                                            <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
-                                                <span class="text-primary">2 / 2566</span>
-                                            </div>
+                                        <h4 class="mb-4 mt-4"><i class="fas fa-calendar-alt"></i> กำหนดการจัดกิจกรรม</h4>
 
+                                        <div class="row">
                                             <div class="col-12 col-md-3">
                                                 วันที่จัดกิจกรรม
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">
                                                     2 มีนาคม 2567
                                                 </span>
                                             </div>
-
-                                            <div class="col-12 col-md-3">
-                                                เวลา
-                                            </div>
-                                            <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
-                                                <span class="text-primary">08:30-16:30</span>
-                                            </div>
-
                                             <div class="col-12 col-md-3">
                                                 สถานที่
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">ห้องประชุมประภากร 3 อาคาร 5 ชั้น 7
                                                     มหาวิทยาลัยภาคตะวันออกเฉียงเหนือ</span>
                                             </div>
 
                                             <div class="col-12 col-md-3">
-                                                โดย
+                                                ผู้รับผิดชอบ
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                                <i class="fa-solid fa-play"></i>
                                                 <span class="text-primary">นายศรานนท์ แวงโสม</span>
                                             </div>
                                         </div>
@@ -183,31 +199,32 @@
                     <!-- Card 2: Number of Applicants -->
                     <div class="card card-right">
                         <div class="card-body">
-                            <div class="widget widget-one">
-                                <div class="widget-heading mb-4" style="justify-content: space-around !important;">
-                                    <h5 class="">จำนวนผู้สมัครเข้าร่วม</h5>
+                            <div class="widget widget-one text-center">
+                                <div class="widget-heading mb-4">
+                                    <i class="fa-solid fa-users"></i>จำนวนผู้สมัครเข้าร่วม
                                 </div>
-                                <div class="widget-content text-center">
-                                    <div class="simple--counter-container">
-                                        <div class="counter-container">
-                                            <div class="counter-content">
+                                <div class="widget-content">
+                                    <div class="simple-counter-container d-flex justify-content-around">
+                                        <div class="counter-container mx-2">
+                                            <div class="counter-content border rounded shadow-sm p-3 mb-2 bg-body">
                                                 <h1 class="s-counter">12</h1>
                                             </div>
                                             <p class="s-counter-text">สมัครแล้ว</p>
                                         </div>
-                                        <div class="counter-container">
-                                            <div class="counter-content">
+                                        <div class="counter-container mx-2">
+                                            <div class="counter-content border rounded shadow-sm p-3 mb-2 bg-body">
                                                 <h1 class="s-counter">250</h1>
                                             </div>
                                             <p class="s-counter-text">จำนวนที่รับ</p>
                                         </div>
                                     </div>
                                     <br />
-                                    <button type="button" class="btn btn-outline-info">Info</button>
+                                    <button type="button" class="btn btn-outline-info">เช็คลงชื่อก่อนเข้าใช้งาน</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <br />
                     <!-- Card 3: Summary of Application Data -->
                     <div class="card card-right">
