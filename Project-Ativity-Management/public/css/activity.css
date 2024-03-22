@@ -1,0 +1,49 @@
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+.statistic-counter {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+
+  .statistic-counter .number {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .statistic-counter .label {
+    font-size: 18px;
+  }
+
+  .btn-pink {
+    background-color: #ff6b81;
+    color: white;
+  }
+  .info-section, .stat-section {
+    margin-bottom: 15px;
+  }
+
+  .info-item, .stat-item {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  .info-value, .stat-value {
+    font-weight: bold;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  .info-item, .stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+  }
+
+  .info-value, .stat-value {
+    text-align: right;
+  }
