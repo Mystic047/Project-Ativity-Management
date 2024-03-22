@@ -26,6 +26,7 @@
         <div class="row mt-4">
             <div class="container">
                 <div class="carousel-background">
+                    <p>ข่าวสาร ประชาสัมพันธ์</p>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
