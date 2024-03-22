@@ -52,7 +52,7 @@
                             </div>
                             <div class="card-body">
                                 <table class="table table-bordered table-hover mb-4">
-                                    <thead>
+                                    <thead class="table-light">
                                         <tr>
                                             <th class="text-center">ข้อมูล</th>
                                             <th>ชื่อกิจกรรม</th>
