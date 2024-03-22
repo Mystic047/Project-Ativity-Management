@@ -25,3 +25,7 @@ Route::get('/filedowload', function () {
 Route::get('/activity', function () {
     return view('activity');
 });
+Route::get('/login', function () {
+    return view('login');
+});
+
