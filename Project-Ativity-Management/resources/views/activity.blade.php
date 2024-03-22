@@ -7,15 +7,18 @@
     <title>Bootstrap 5 Cards Layout</title>
     <!-- Link to Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link to your custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/activity.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/activity.css') }}">
 </head>
 <style>
- 
+
 </style>
 @extends('layout.master')
 @section('content')
+
     <body style="background-color:#f5f5f5;">
         <br>
         <div class="container">
@@ -31,12 +34,14 @@
                             <div class="widget-content border-tab">
                                 <ul class="nav nav-tabs mt-3" id="border-tabs" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="border-home-tab" data-toggle="tab" href="#border-home"
-                                            role="tab" aria-controls="border-home" aria-selected="true">ข้อมูลกิจกรรม</a>
+                                        <a class="nav-link active" id="border-home-tab" data-toggle="tab"
+                                            href="#border-home" role="tab" aria-controls="border-home"
+                                            aria-selected="true">ข้อมูลกิจกรรม</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="border-profile-tab" data-toggle="tab" href="#border-profile"
-                                            role="tab" aria-controls="border-profile" aria-selected="false">รายชื่อผู้สมัคร</a>
+                                            role="tab" aria-controls="border-profile"
+                                            aria-selected="false">รายชื่อผู้สมัคร</a>
                                     </li>
 
                                 </ul>
@@ -52,7 +57,8 @@
                                             </div>
                                             <div class="col-12 col-md-9">
                                                 <i class="fa-solid fa-play"></i>
-                                                <span class="text-primary">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา 2566</span>
+                                                <span class="text-primary">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา
+                                                    2566</span>
                                             </div>
 
                                             <div class="col-12 col-md-3">
@@ -154,10 +160,17 @@
                                         </tbody>
                                         </table>
                                     </div>
+                                    <div class="mt-4 mb-4">
+                                        <img style="border-radius: 20px;"
+                                            src="https://activity.idcneu.com/neu/file_intro_event/65daa60fd225d20240225092935.jpg"
+                                            width="100%">
+                                    </div>
+                                    <br />
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-lg-3 col-md-12 layout-spacing">
                     <!-- Card 2: Number of Applicants -->
@@ -216,6 +229,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         </div>
         <!-- Bootstrap JS -->
