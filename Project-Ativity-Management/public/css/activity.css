@@ -47,3 +47,40 @@
   .info-value, .stat-value {
     text-align: right;
   }
+  .card {
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 80px; /* ปรับโค้งมนของการ์ด */
+    /* เพิ่มเงาเล็กน้อย */
+}
+    .widget-heading {
+        font-size: 1.2rem; /* Larger font size for the heading */
+        color: #333; /* Adjust text color as needed */
+        margin-bottom: 1rem; /* Space below the heading */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the heading and icon */
+    }
+
+    .fa-users {
+        margin-right: 0.5rem; /* Space between the icon and text */
+    }
+
+    .counter-content {
+        background: #FFF; /* Background color for the counters */
+        border-radius: 10px; /* Rounded corners for the counters */
+        display: inline-block;
+    }
+
+    .s-counter {
+        font-size: 2.5rem; /* Larger font size for the counter number */
+        color: #007bff; /* Color of the counter number */
+    }
+
+    .s-counter-text {
+        color: #333333; /* Text color for the counter label */
+        font-weight: bold;
+    }
+
+    body {
+        background-color: #f5f5f5; /* Set background color */
+    }
