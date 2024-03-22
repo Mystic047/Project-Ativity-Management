@@ -23,7 +23,7 @@
         }
 
         .bottom-navbar {
-            background-color: #f8f9fa;
+            background-color: white;
             /* สีพื้นหลังส่วนล่าง */
         }
 
