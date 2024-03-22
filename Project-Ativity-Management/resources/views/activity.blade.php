@@ -18,25 +18,170 @@
             <!-- Row for the two cards -->
             <div class="row">
                 <!-- First Card -->
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">รายละเอียดกิจกรรม</h5>
-                            <!-- Your content here -->
-                            <div class="info-section">
-                                <p class="info-item">ข้อมูลการทำงาน</p>
-                                <p class="info-item">ประเภทการทำงาน: <span class="info-value">การจัดการทรัพยากร</span></p>
-                                <p class="info-item">สถานะ: <span
-                                        class="info-value">การจัดการทรัพยากรที่ยั่งยืนและมีคุณภาพ</span></p>
-                                <!-- more items -->
+                <div class="widget-content border-tab">
+
+                    <ul class="nav nav-tabs mt-3" id="border-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="border-home-tab" data-toggle="tab" href="#border-home"
+                                role="tab" aria-controls="border-home" aria-selected="true">ข้อมูลกิจกรรม</a>
+                        </li>
+                    </ul><br>
+                    <div class="tab-content mb-4" id="border-tabsContent">
+                        <div class="tab-pane fade show active" id="border-home" role="tabpanel"
+                            aria-labelledby="border-home-tab">
+                            <h4 class="mb-4"><i class="bi bi-journals"></i> เกี่ยวกับกิจกรรม</h4>
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    ชื่อกิจกรรม
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา 2566</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    ประเภทและลักษณะของกิจกรรม
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">
+                                        กิจกรรมทั่วไป
+                                    </span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    ลักษณะกิจกรรมการเรียนรู้แบบบูรณาการ
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span
+                                        class="text-primary">เพื่อเป็นการเสริมสร้างคุณลักษณะของบัณฑิตที่พึ่งประสงค์ตามเป้าหมายของมหาวิทยาลัย
+                                        คือมหาวิทยาลัยภาคตะวันออกเฉียงเหนือ
+                                        เป็นมหาวิทยาลัยชั้นนำของภูมิภาคในการสร้างโอกาสสู่อนาคต</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    คุณสมบัติผู้สมัคร
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">นักศึกษามหาวิทยาลัยภาคตะวันออกเฉียงเหนือ</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    สังกัด
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary"> กิจกรรมส่วนกลาง (มหาวิทยาลัย)
+                                    </span>
+                                </div>
+
                             </div>
-                            <div class="stat-section">
-                                <p class="stat-item">จำนวนงานที่สำเร็จ: <span class="stat-value">250</span></p>
-                                <p class="stat-item">งานที่เป็นไป / ครั้ง: <span class="stat-value">8 ชั่วโมง (40
-                                        คะแนน)</span></p>
-                                <!-- more statistics -->
+                            <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
+                            <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
+                            <h4 class="mb-4 mt-4"><i class="bi bi-person-circle"></i> การรับสมัคร</h4>
+
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    จำนวนที่รับสมัคร
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">250</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    ค่าชั่วโมง/ครั้ง
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">8 ชั่วโมง (40 คะแนน)</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    เปิดรับสมัคร
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">25 กุมภาพันธ์ 2567</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    ปิดรับสมัคร
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">2 มีนาคม 2567</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    สถานะ
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="badge badge-danger">ปิดรับสมัคร</span>
+                                </div>
+
                             </div>
-                            <a href="#" class="btn btn-secondary">ดูรายละเอียด</a>
+
+                            <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
+                            <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
+                            <h4 class="mb-4 mt-4"><i class="bi bi-calendar-week"></i> กำหนดการจัดกิจกรรม</h4>
+
+
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    ปีการศึกษา
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">2 / 2566</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    วันที่จัดกิจกรรม
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">
+                                        2 มีนาคม 2567
+                                    </span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    เวลา
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">08:30-16:30</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    สถานที่
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">ห้องประชุมประภากร 3 อาคาร 5 ชั้น 7
+                                        มหาวิทยาลัยภาคตะวันออกเฉียงเหนือ</span>
+                                </div>
+
+                                <div class="col-12 col-md-3">
+                                    โดย
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-caret-right"></i>
+                                    <span class="text-primary">นายศรานนท์ แวงโสม</span>
+                                </div>
+
+                            </div>
+                            <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
+                            <br />
+                            <br />
+                            <!-- :::::::::::::::::::::::::::::::::::::::::::: -->
+                        </div>
+                        <div class="tab-pane fade" id="border-profile" role="tabpanel"
+                            aria-labelledby="border-profile-tab">
                         </div>
                     </div>
                 </div>
