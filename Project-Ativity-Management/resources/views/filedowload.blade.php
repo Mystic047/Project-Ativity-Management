@@ -11,10 +11,11 @@
      *{
             font-family: 'Noto Sans Thai', sans-serif;
         }
+
 </style>
 @extends('layout.master')
 @section('content')
-<body>
+<body style="background-color:#f5f5f5;">
 
   <div class="container mt-5">
     <!-- Table -->
