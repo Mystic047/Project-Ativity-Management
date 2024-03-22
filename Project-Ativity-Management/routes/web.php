@@ -19,12 +19,15 @@ Route::get('/', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
-Route::get('/filedowload', function () {
-    return view('filedowload');
+Route::get('/fileupload', function () {
+    return view('fileupload');
 });
 Route::get('/activity', function () {
     return view('activity');
 });
 Route::get('/login', function () {
     return view('login');
+});
+Route::get('/filedowload', function () {
+    return view('filedowload');
 });
