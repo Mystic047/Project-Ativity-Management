@@ -18,7 +18,7 @@
 
         /* ปรับลักษณะของ Navbar ให้แบ่งเป็นสองส่วน */
         .top-navbar {
-            background-color: #8e12e158;
+            background-color: #ffc000;
             /* สีพื้นหลังส่วนบน */
         }
 
