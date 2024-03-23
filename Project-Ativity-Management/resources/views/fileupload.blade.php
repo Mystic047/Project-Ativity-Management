@@ -24,6 +24,9 @@
             margin-bottom: 15px;
             padding-bottom: 5px;
         }
+        * {
+        font-family: 'Noto Sans Thai', sans-serif;
+    }
     </style>
 </head>
 @extends('layout.master')
@@ -49,9 +52,7 @@
                     </div>
                 </form>
             </div>
-            <div class="text-center mt-4">
-                <span>&copy; 2021 ระบบจัดการเอกสารภายใน</span>
-            </div>
+           
         </div>
     </div>
 
