@@ -49,7 +49,7 @@
   }
   .card {
     border: none; /* ลบเส้นขอบ */
-    border-radius: 80px; /* ปรับโค้งมนของการ์ด */
+     border-radius: 80px; 
     /* เพิ่มเงาเล็กน้อย */
 }
     .widget-heading {
