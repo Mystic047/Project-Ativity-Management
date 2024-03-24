@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('files_for_downloads', function (Blueprint $table) {
-            $table->id();
+            $table->id('file_id');
+            $table->string('fileName');
+            $table->string('file_path');
+            $table->string('professor_id');
+            $table->string('admin_id');
             $table->timestamps();
         });
     }

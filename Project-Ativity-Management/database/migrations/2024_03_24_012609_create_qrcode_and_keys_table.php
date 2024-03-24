@@ -12,7 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('qrcode_and_keys', function (Blueprint $table) {
-            $table->id();
+            $table->id('qrcodeId');
+            $table->binary('code');
+            $table->string('imagePath');
+            $table->string('key');
+            $table->string('activity_id');
             $table->timestamps();
         });
     }
