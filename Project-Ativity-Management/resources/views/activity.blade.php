@@ -60,24 +60,6 @@
                                                 <span class="text-primary">โครงการปัจฉิมนิเทศนักศึกษา ประจำปีการศึกษา
                                                     2566</span>
                                             </div>
-
-                                            <div class="col-12 col-md-3">
-                                                ประเภทและลักษณะของกิจกรรม
-                                            </div>
-                                            <div class="col-12 col-md-9">
-                                                <i class="fa-solid fa-play"></i>
-                                                <span class="text-primary">
-                                                    กิจกรรมทั่วไป
-                                                </span>
-                                            </div>
-                                            <div class="col-12 col-md-3">
-                                                คุณสมบัติผู้สมัคร
-                                            </div>
-                                            <div class="col-12 col-md-9">
-                                                <i class="fa-solid fa-play"></i>
-                                                <span class="text-primary">นักศึกษามหาวิทยาลัยภาคตะวันออกเฉียงเหนือ</span>
-                                            </div>
-
                                             <div class="col-12 col-md-3">
                                                 สังกัด
                                             </div>
@@ -162,7 +144,7 @@
                                     </div>
                                     <div class="mt-4 mb-4">
                                         <img style="border-radius: 20px;"
-                                            src="https://activity.idcneu.com/neu/file_intro_event/65daa60fd225d20240225092935.jpg"
+                                            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/futsal-football-soccer-tournament-competition-flyer-poster-design-template-769c26466e4632d61365c8667a192ad4_screen.jpg?ts=1636983710"
                                             width="100%">
                                     </div>
                                     <br />
@@ -196,7 +178,7 @@
                                         </div>
                                     </div>
                                     <br />
-                                    <button type="button" class="btn btn-outline-info">เช็คลงชื่อก่อนเข้าใช้งาน</button>
+                                    <button type="button" class="btn btn-outline-info">เช็คลงให้ล๊อคอินก่อนลงชื่อใช้งาน</button>
                                 </div>
                             </div>
                         </div>
