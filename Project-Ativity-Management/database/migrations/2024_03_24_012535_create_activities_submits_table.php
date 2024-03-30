@@ -12,10 +12,19 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('activities_submits', function (Blueprint $table) {
-            $table->id('activitySubmitId')->primary();
-            $table->string('student_id');
+            $table->id('activitySubmitId');
+            $table->string('students_id');
             $table->string('activity_id');
             $table->timestamps();
+
+            $table->foreign('students_id')
+                ->references('students_id')->on('students')
+                ->onDelete('cascade');
+
+            $table->foreign('activity_id')
+                ->references('activity_id')->on('activities')
+                ->onDelete('cascade');
+
         });
     }
 

@@ -9,10 +9,10 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void   
+    public function up(): void
     {
-        Schema::create('studens', function (Blueprint $table) {
-            $table->string('studens_id')->primary();
+        Schema::create('students', function (Blueprint $table) {
+            $table->string('students_id')->primary();
             $table->string('email')->unique();
             $table->string('password');
             $table->string('nickname');
@@ -22,6 +22,16 @@ return new class extends Migration
             $table->string('area_id');
             $table->rememberToken();
             $table->timestamps();
+
+
+            $table->foreign('faculty_id')
+                ->references('faculty_id')->on('faculties')
+                ->onDelete('cascade');
+
+            $table->foreign('area_id')
+                ->references('area_id')->on('areas')
+                ->onDelete('cascade');
+
         });
     }
 

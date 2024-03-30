@@ -15,9 +15,14 @@ return new class extends Migration
             $table->id('certificateId');
             $table->string('fileName');
             $table->string('templagePath');
-            $table->string('activityTypeId');
+            $table->string('activity_type_id'); //still not having the talble
             $table->string('admin_id');
             $table->timestamps();
+
+            $table->foreign('admin_id')
+            ->references('admin_id')->on('admins')
+            ->onDelete('cascade');
+
         });
     }
 
