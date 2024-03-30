@@ -31,3 +31,6 @@ Route::get('/login', function () {
 Route::get('/filedowload', function () {
     return view('filedowload');
 });
+Route::get('/dashboard', function () {
+    return view('/admin/dashboard');
+});
