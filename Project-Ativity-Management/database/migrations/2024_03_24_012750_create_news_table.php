@@ -18,6 +18,10 @@ return new class extends Migration
             $table->string('image_path');
             $table->string('admin_id');
             $table->timestamps();
+
+            $table->foreign('admin_id')
+                ->references('admin_id')->on('admins')
+                ->onDelete('cascade');
         });
     }
 

@@ -17,6 +17,11 @@ return new class extends Migration
             $table->string('file_path');
             $table->string('professor_id');
             $table->string('admin_id');
+
+            $table->foreign('admin_id')
+                ->references('admin_id')->on('admins')
+                ->onDelete('cascade');
+
             $table->timestamps();
         });
     }
