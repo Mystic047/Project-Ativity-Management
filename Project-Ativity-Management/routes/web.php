@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\studentController;
+use App\Http\Controllers\professorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,7 +51,11 @@ Route::controller(studentController::class)->group(function () {
     Route::post('/createStudent', 'create')->name('student.create');
 });
 
-
+Route::controller(professorController::class)->group(function () {
+    Route::get('/manageProfessor', 'showManageView')->name('professor.manage');
+    Route::get('/createFormProfessor', 'showCreateView')->name('professor.showCreate');
+    Route::post('/createProfessor', 'create')->name('professor.create');
+});
 
 Route::get('/ProfessorCreate', function () {
     return view('/admin/createView/professorCreate');

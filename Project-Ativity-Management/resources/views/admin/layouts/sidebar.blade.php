@@ -21,7 +21,7 @@
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href=" {{route('student.manage')}} ">ข้อมูลนักศึกษา</a></li>
                 <li><a class="nav-link" href=" {{ 'ActivitycoordinatorsManagement' }} ">ข้อมูลฝ่ายกิจกรรม</a></li>
-                <li><a class="nav-link" href=" {{'ProfessorManagement'}} ">ข้อมูลอาจารย์</a></li>
+                <li><a class="nav-link" href=" {{route('professor.manage')}} ">ข้อมูลอาจารย์</a></li>
                 <li><a class="nav-link" href=" {{'AdminManagement'}}">ข้อมูลผู้ดูแล</a></li>
             </ul>
           </li>

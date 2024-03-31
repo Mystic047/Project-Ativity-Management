@@ -4,24 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use App\Models\Students;
+use App\Models\professors;
 
-class studentController extends Controller
+class professorController extends Controller
 {
     public function showManageView()
     {
-        return view('/admin/managementView/studentManage');
+        return view('/admin/managementView/professorManage');
     }
 
     public function showCreateView()
     {
-        return view('/admin/createView/studentCreate');
+        return view('/admin/createView/professorCreate');
     }
 
     public function create(Request $request)
     {
         $request->validate([
-            'students_id' => 'required|unique:students,students_id',
+            'professors_id' => 'required|unique:professors,professors_id',
             'email' => 'nullable|string',
             'password' => 'required|min:8',
             'firstname' => 'nullable|string',
@@ -34,10 +34,10 @@ class studentController extends Controller
 
         Log::debug($request->all());
 
-        $student = new Students;
-        $student->fill($request->all());
-        $student->save();
+        $professor = new professors;
+        $professor->fill($request->all());
+        $professor->save();
 
-        return redirect()->route('student.manage')->with('success', 'Students added successfully!');
+        return redirect()->route('professor.manage')->with('success', 'Students added successfully!');
     }
 }
