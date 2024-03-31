@@ -27,27 +27,27 @@
 <body style="background-color:#f5f5f5;">
     <section class="section">
         <div class="section-header">
-            <h1>จัดการข้อมูลคณะและสาขา</h1>
+            <h1>จัดการข้อมูลฝ่ายกิจกรรม</h1>
         </div>
     </section>
     <div class="container">
         <div class="card mt-5">
             <div class="card-body">
-                <p>จัดการข้อมูลคณะ</p>
                 <!-- Search bar and Create button -->
                 <div class="search-bar">
                     <div class="search-box">
                         <input type="text" class="form-control" placeholder="Search...">
                     </div>
-                    <a href="{{ ('createFaculty') }}" class="btn btn-primary">Create</a>
+                    <a href="{{ ('ActivityCoordinatorsCreate') }}" class="btn btn-primary">Create</a>
                 </div>
 
                 <!-- User table -->
                 <table class="table table-bordered">
                     <thead class="table table-sm">
                         <tr>
-                            <th scope="col">faculty_id</th>
-                            <th scope="col">faculty_name</th>
+                            <th scope="col">รหัส</th>
+                            <th scope="col">ชื่อ</th>
+                            <th scope="col">สาขา</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -56,43 +56,7 @@
                         <tr>
                             <td>Admin</td>
                             <td>Admin</td>
-                            <td>
-                                <button class="btn btn-warning btn-sm">Edit</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                        <!-- End user block -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="card mt-5">
-            <div class="card-body">
-                <!-- Search bar and Create button -->
-                <p>จัดการข้อมูลสาขา</p>
-                <div class="search-bar">
-                    <div class="search-box">
-                        <input type="text" class="form-control" placeholder="Search...">
-                    </div>
-                    <a href="{{ ('createArea') }}" class="btn btn-primary">Create</a>
-                </div>
-
-                <!-- User table -->
-                <table class="table table-bordered">
-                    <thead class="table table-sm">
-                        <tr>
-                            <th scope="col">area_id</th>
-                            <th scope="col">area_name</th>
-                            <th scope="col">faculty_id</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Repeat this block for each user -->
-                        <tr>
-                            <td>Admin</td>
-                            <td>Admin</td>
-                            <td>Admin</td>
+                            <td>22/03/2022</td>
                             <td>
                                 <button class="btn btn-warning btn-sm">Edit</button>
                                 <button class="btn btn-danger btn-sm">Delete</button>

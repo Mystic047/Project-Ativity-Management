@@ -34,36 +34,36 @@ Route::get('/filedowload', function () {
 Route::get('/dashboard', function () {
     return view('/admin/dashboard');
 });
-Route::get('/createAcUser', function () {
-    return view('/admin/user/createAc');
+Route::get('/ActivityCoordinatorsCreate', function () {
+    return view('/admin/createView/activitycoordinatorsCreate');
 });
-Route::get('/createStuUser', function () {
-    return view('/admin/user/createStu');
+Route::get('/StudentCreate', function () {
+    return view('/admin/createView/studentCreate');
 });
-Route::get('/createProUser', function () {
-    return view('/admin/user/createPro');
+Route::get('/ProfessorCreate', function () {
+    return view('/admin/createView/professorCreate');
 });
-Route::get('/AcManagement', function () {
-    return view('/admin/user/ac');
+Route::get('/ActivitycoordinatorsManagement', function () {
+    return view('/admin/managementView/activitycoordinatorsManage');
 });
-Route::get('/faculManagement', function () {
-    return view('/admin/faculty/create-fa-area');
+Route::get('/FacultyManagement', function () {
+    return view('/admin/managementView/faculty-areaManage');
 });
-Route::get('/createFaculty', function () {
-    return view('/admin/faculty/create_fac');
+Route::get('/FacultyCreate', function () {
+    return view('/admin/createView/facultyCreate');
 });
-Route::get('/createArea', function () {
-    return view('/admin/faculty/create_area');
+Route::get('/AreaCreate', function () {
+    return view('/admin/createView/areaCreate');
 });
-Route::get('/StuManagement', function () {
-    return view('/admin/user/stu');
+Route::get('/StudentManagement', function () {
+    return view('/admin/managementView/studentManage');
 });
 Route::get('/AdminManagement', function () {
-    return view('/admin/user/admin');
+    return view('/admin/managementView/adminManage');
 });
-Route::get('/ProManagement', function () {
-    return view('/admin/user/pro');
+Route::get('/ProfessorManagement', function () {
+    return view('/admin/managementView/professorManage');
 });
-Route::get('/createAdminUser', function () {
-    return view('/admin/user/createAdmin');
+Route::get('/AdminCreate', function () {
+    return view('/admin/createView/admincreate');
 });
