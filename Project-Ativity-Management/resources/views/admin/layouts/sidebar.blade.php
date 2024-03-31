@@ -20,15 +20,15 @@
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-user"></i><span>จัดการข้อมูลผู้ใช้</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href=" {{route('student.manage')}} ">ข้อมูลนักศึกษา</a></li>
-                <li><a class="nav-link" href=" {{ 'AcManagement' }} ">ข้อมูลฝ่ายกิจกรรม</a></li>
-                <li><a class="nav-link" href=" {{'ProManagement'}} ">ข้อมูลอาจารย์</a></li>
+                <li><a class="nav-link" href=" {{ 'ActivitycoordinatorsManagement' }} ">ข้อมูลฝ่ายกิจกรรม</a></li>
+                <li><a class="nav-link" href=" {{'ProfessorManagement'}} ">ข้อมูลอาจารย์</a></li>
                 <li><a class="nav-link" href=" {{'AdminManagement'}}">ข้อมูลผู้ดูแล</a></li>
             </ul>
           </li>
         <li class="dropdown active">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-table"></i><span>จัดการข้อมูลสาขา</span></a>
             <ul class="dropdown-menu">
-                <li><a class="nav-link" href=" {{'faculManagement'}} ">จัดการข้อมูลสาขา</a></li>
+                <li><a class="nav-link" href=" {{'FacultyManagement'}} ">จัดการข้อมูลสาขา</a></li>
             </ul>
         </li>
 
