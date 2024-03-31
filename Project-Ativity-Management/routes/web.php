@@ -64,3 +64,6 @@ Route::get('/AdminManagement', function () {
 Route::get('/ProManagement', function () {
     return view('/admin/user/pro');
 });
+Route::get('/createAdminUser', function () {
+    return view('/admin/user/createAdmin');
+});
