@@ -1,10 +1,10 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-        <a href="index.html">Stisla</a>
+        <a href="{{ 'dashboard' }}">Activity</a>
       </div>
       <div class="sidebar-brand sidebar-brand-sm">
-        <a href="index.html">St</a>
+        <a href="index.html">ATVM</a>
       </div>
       <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
@@ -16,13 +16,31 @@
           </ul>
         </li>
         <li class="menu-header">Starter</li>
-        <li class="dropdown">
-          <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Manage Website</span></a>
-          <ul class="dropdown-menu">
-            <li><a class="nav-link" href="{{route('type.index')}}">Type</a></li>
-            <li><a class="nav-link" href="{{route('type.index')}}">Type</a></li>
-          </ul>
+        <li class="dropdown active">
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-user"></i><span>จัดการข้อมูลผู้ใช้</span></a>
+            <ul class="dropdown-menu">
+                <li><a class="nav-link" href="">ข้อมูลนักศึกษา</a></li>
+                <li><a class="nav-link" href=" {{ 'AcManagement' }} ">ข้อมูลฝ่ายกิจกรรม</a></li>
+                <li><a class="nav-link" href="">ข้อมูลอาจารย์</a></li>
+                <li><a class="nav-link" href="">ข้อมูลผู้ดูแล</a></li>
+            </ul>
+          </li>
+        <li class="dropdown active">
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-table"></i><span>จัดการข้อมูลสาขา</span></a>
+            <ul class="dropdown-menu">
+                <li><a class="nav-link" href=" {{'faculManagement'}} ">จัดการข้อมูลสาขา</a></li>
+            </ul>
         </li>
+
+        {{-- <li class="dropdown">
+          <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>จัดการข้อมูลผู้ใช้</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="nav-link" href="">ข้อมูลนักศึกษา</a></li>
+            <li><a class="nav-link" href="">ข้อมูลฝ่ายกิจกรรม</a></li>
+            <li><a class="nav-link" href="">ข้อมูลอาจารย์</a></li>
+            <li><a class="nav-link" href="">ข้อมูลผู้ดูแล</a></li>
+          </ul>
+        </li> --}}
 
         {{-- <li class="dropdown">
           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>

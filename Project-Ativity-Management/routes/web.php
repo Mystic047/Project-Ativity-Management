@@ -34,3 +34,21 @@ Route::get('/filedowload', function () {
 Route::get('/dashboard', function () {
     return view('/admin/dashboard');
 });
+Route::get('/createAcUser', function () {
+    return view('/admin/user/createAc');
+});
+Route::get('/createStuUser', function () {
+    return view('/admin/user/create/create-stu-user');
+});
+Route::get('/AcManagement', function () {
+    return view('/admin/user/ac');
+});
+Route::get('/faculManagement', function () {
+    return view('/admin/faculty/create-fa-area');
+});
+Route::get('/createFaculty', function () {
+    return view('/admin/faculty/create_fac');
+});
+Route::get('/createArea', function () {
+    return view('/admin/faculty/create_area');
+});
