@@ -19,9 +19,7 @@ return new class extends Migration
             $table->string('admin_id');
             $table->timestamps();
 
-            $table->foreign('admin_id')
-            ->references('admin_id')->on('admins')
-            ->onDelete('cascade');
+
 
         });
     }

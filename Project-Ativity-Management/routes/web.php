@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\studentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,9 +37,21 @@ Route::get('/dashboard', function () {
 Route::get('/ActivityCoordinatorsCreate', function () {
     return view('/admin/createView/activitycoordinatorsCreate');
 });
-Route::get('/StudentCreate', function () {
-    return view('/admin/createView/studentCreate');
+
+
+Route::get('/createStuUser', function () {
+    return view('/admin/user/createStu');
 });
+
+//Student Management
+Route::controller(studentController::class)->group(function () {
+    Route::get('/manageStudent', 'showManageView')->name('student.manage');
+    Route::get('/createFormStudent', 'showCreateView')->name('student.showCreate');
+    Route::post('/createStudent', 'create')->name('student.create');
+});
+
+
+
 Route::get('/ProfessorCreate', function () {
     return view('/admin/createView/professorCreate');
 });
