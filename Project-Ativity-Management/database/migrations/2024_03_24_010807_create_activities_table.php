@@ -25,9 +25,7 @@ return new class extends Migration
             $table->string('assentment_link');
             $table->string('professors_id');
 
-            $table->foreign('professors_id')
-                ->references('professors_id')->on('professors')
-                ->onDelete('cascade');
+
 
         });
     }

@@ -23,14 +23,6 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->foreign('faculty_id')
-                ->references('faculty_id')->on('faculties')
-                ->onDelete('cascade');
-
-            $table->foreign('area_id')
-                ->references('area_id')->on('areas')
-                ->onDelete('cascade');
-
         });
     }
 
