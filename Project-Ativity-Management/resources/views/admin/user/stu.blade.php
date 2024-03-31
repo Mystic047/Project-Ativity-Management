@@ -38,7 +38,7 @@
                     <div class="search-box">
                         <input type="text" class="form-control" placeholder="Search...">
                     </div>
-                    <a href="{{ ('createStuUser') }}" class="btn btn-primary">Create</a>
+                    <a href="{{ route('student.showCreate') }}" class="btn btn-primary">Create</a>
                 </div>
 
                 <!-- User table -->
