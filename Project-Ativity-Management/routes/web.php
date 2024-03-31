@@ -38,7 +38,10 @@ Route::get('/createAcUser', function () {
     return view('/admin/user/createAc');
 });
 Route::get('/createStuUser', function () {
-    return view('/admin/user/create/create-stu-user');
+    return view('/admin/user/createStu');
+});
+Route::get('/createProUser', function () {
+    return view('/admin/user/createPro');
 });
 Route::get('/AcManagement', function () {
     return view('/admin/user/ac');
@@ -51,4 +54,13 @@ Route::get('/createFaculty', function () {
 });
 Route::get('/createArea', function () {
     return view('/admin/faculty/create_area');
+});
+Route::get('/StuManagement', function () {
+    return view('/admin/user/stu');
+});
+Route::get('/AdminManagement', function () {
+    return view('/admin/user/admin');
+});
+Route::get('/ProManagement', function () {
+    return view('/admin/user/pro');
 });

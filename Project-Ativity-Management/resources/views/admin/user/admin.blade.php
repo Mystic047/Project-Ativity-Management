@@ -27,7 +27,7 @@
 <body style="background-color:#f5f5f5;">
     <section class="section">
         <div class="section-header">
-            <h1>จัดการข้อมูลฝ่ายกิจกรรม</h1>
+            <h1>จัดการข้อมูลแอดมิน</h1>
         </div>
     </section>
     <div class="container">

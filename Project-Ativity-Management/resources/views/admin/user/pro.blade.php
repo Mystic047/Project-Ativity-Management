@@ -27,7 +27,7 @@
 <body style="background-color:#f5f5f5;">
     <section class="section">
         <div class="section-header">
-            <h1>จัดการข้อมูลฝ่ายกิจกรรม</h1>
+            <h1>จัดการข้อมูลอาจารย์</h1>
         </div>
     </section>
     <div class="container">
@@ -38,7 +38,7 @@
                     <div class="search-box">
                         <input type="text" class="form-control" placeholder="Search...">
                     </div>
-                    <a href="{{ ('createAcUser') }}" class="btn btn-primary">Create</a>
+                    <a href="{{ ('createProUser') }}" class="btn btn-primary">Create</a>
                 </div>
 
                 <!-- User table -->
