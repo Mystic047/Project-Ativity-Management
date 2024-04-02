@@ -84,3 +84,24 @@ Route::get('/ProfessorManagement', function () {
 Route::get('/AdminCreate', function () {
     return view('/admin/createView/admincreate');
 });
+
+
+///////////////////Edit
+Route::get('/AdminEdit', function () {
+    return view('/admin/editView/adminEdit');
+});
+Route::get('/StudentEdit', function () {
+    return view('/admin/editView/studentEdit');
+});
+Route::get('/ProfessorEdit', function () {
+    return view('/admin/editView/professorEdit');
+});
+Route::get('/ActivityCoordinatorsEdit', function () {
+    return view('/admin/editView/activitycoordinatorsEdit');
+});
+Route::get('/AreaEdit', function () {
+    return view('/admin/editView/areaEdit');
+});
+Route::get('/FacultyEdit', function () {
+    return view('/admin/editView/facultyEdit');
+});
