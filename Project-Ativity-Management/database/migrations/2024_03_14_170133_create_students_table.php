@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('faculty_id');
             $table->string('area_id');
+            $table->string('profile_picture')->nullable();
             $table->rememberToken();
             $table->timestamps();
 
@@ -34,4 +35,3 @@ return new class extends Migration
         Schema::dropIfExists('studens');
     }
 };
- 

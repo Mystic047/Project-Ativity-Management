@@ -1,0 +1,57 @@
+[2024-04-07 02:03:09] local.DEBUG: array (
+  '_token' => 'nClTow9wsobz2F8zIajSNHG3bVkWkSlTJzZ0YtsJ',
+  'professors_id' => 'admin@gmail.com',
+  'email' => 'hungabeebee1@gmail.com',
+  'password' => 'test12345',
+  'firstname' => 'KOBPOP',
+  'lastname' => 'MYSE4',
+  'nickname' => 'ขิง',
+  'faculty_id' => '1',
+  'area_id' => '1',
+  'profile_picture' => 
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => 'Screenshot 2023-10-23 144747.jpg',
+     'mimeType' => 'image/jpeg',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)  
+[2024-04-07 02:03:35] local.DEBUG: array (
+  '_token' => 'nClTow9wsobz2F8zIajSNHG3bVkWkSlTJzZ0YtsJ',
+  'professors_id' => 'admin@gmail.com22',
+  'email' => 'hungabeewasdbee1@gmail.com',
+  'password' => 'test12345',
+  'firstname' => 'KOBPOP',
+  'lastname' => 'MYSE4',
+  'nickname' => 'ขิง',
+  'faculty_id' => '1',
+  'area_id' => '1',
+  'profile_picture' => 
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => '433416813_704679168542179_7715466570932978413_n.jpg',
+     'mimeType' => 'image/jpeg',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)  
+[2024-04-07 02:06:34] local.DEBUG: array (
+  '_token' => 'nClTow9wsobz2F8zIajSNHG3bVkWkSlTJzZ0YtsJ',
+  'students_id' => 'admin@gmail.com22',
+  'email' => 'hungabeewasdbee1@gmail.com',
+  'password' => 'test12345',
+  'firstname' => 'KOBPOP',
+  'lastname' => 'MYSE4',
+  'nickname' => 'ขิง',
+  'faculty_id' => '1',
+  'area_id' => '1',
+  'profile_picture' => 
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => '430920278_7507141102669888_3443368809868875081_n.png',
+     'mimeType' => 'image/png',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)  

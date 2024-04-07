@@ -46,13 +46,21 @@ Route::get('/createStuUser', function () {
 
 //Student Management
 Route::controller(studentController::class)->group(function () {
+    //show manage Student page
     Route::get('/manageStudent', 'showManageView')->name('student.manage');
+
+    //Create Student
     Route::get('/createFormStudent', 'showCreateView')->name('student.showCreate');
     Route::post('/createStudent', 'create')->name('student.create');
+
+
 });
 
 Route::controller(professorController::class)->group(function () {
+    //show manage Professor page
     Route::get('/manageProfessor', 'showManageView')->name('professor.manage');
+
+    //Create Professor
     Route::get('/createFormProfessor', 'showCreateView')->name('professor.showCreate');
     Route::post('/createProfessor', 'create')->name('professor.create');
 });
@@ -60,6 +68,7 @@ Route::controller(professorController::class)->group(function () {
 Route::get('/ProfessorCreate', function () {
     return view('/admin/createView/professorCreate');
 });
+
 Route::get('/ActivitycoordinatorsManagement', function () {
     return view('/admin/managementView/activitycoordinatorsManage');
 });
