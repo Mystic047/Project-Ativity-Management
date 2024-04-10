@@ -11,8 +11,8 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-@extends('admin.layouts.master')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
     <body style="background-color:#f5f5f5;">
     <section class="section">
         <div class="section-header">
@@ -22,8 +22,8 @@
     <div class="container">
         <div class="card my-5">
             <div class="card-body">
-                <form class="row g-3" action="{{route('coordinator.create')}}" method="POST" enctype="multipart/form-data">
-                    @csrf
+                <form class="row g-3" action="<?php echo e(route('coordinator.create')); ?>" method="POST" enctype="multipart/form-data">
+                    <?php echo csrf_field(); ?>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">ID</label>
                         <input type="text" name='ac_id' class="form-control" id="inputAddress" placeholder="ถ้า Auto ก็เอาออก">
@@ -72,5 +72,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </body>
-@endsection
+<?php $__env->stopSection(); ?>
 </html>
+
+<?php echo $__env->make('admin.layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH G:\Mystic047-Project-Ativity-Management\Project-Ativity-Management\resources\views//admin/createView/activitycoordinatorsCreate.blade.php ENDPATH**/ ?>
