@@ -22,12 +22,12 @@
         }
     </style>
 </head>
-@extends('admin.layouts.master')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <body style="background-color:#f5f5f5;">
     <section class="section">
         <div class="section-header">
-            <h1>จัดการข้อมูลฝ่ายกิจกรรม</h1>
+            <h1>จัดการข้อมูลนักศึกษา</h1>
         </div>
     </section>
     <div class="row">
@@ -101,7 +101,7 @@
                     <div class="search-box">
                         <input type="text" class="form-control" placeholder="Search...">
                     </div>
-                    <a href="{{ route('coordinator.showCreate') }}" class="btn btn-primary">Create</a>
+                    <a href="<?php echo e(route('student.showCreate')); ?>" class="btn btn-primary">Add New</a>
                 </div>
 
                 <!-- User table -->
@@ -206,5 +206,7 @@
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-@endsection
+<?php $__env->stopSection(); ?>
 </html>
+
+<?php echo $__env->make('admin.layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH G:\Mystic047-Project-Ativity-Management\Project-Ativity-Management\resources\views//admin/managementView/studentManage.blade.php ENDPATH**/ ?>

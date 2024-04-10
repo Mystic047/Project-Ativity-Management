@@ -56,10 +56,8 @@
                         <input type="text" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputState" class="form-label">ถ้าไม่มีรูปก็เอาออก</label>
-                        <div>
-                            <input class="form-control " id="formFileLg" type="file" >
-                        </div>
+                        <label for="profile_picture">Profile Picture:</label><br>
+                        <input type="file" id="profile_picture" name="profile_picture"><br><br>
                     </div>
                     <div class="col-12">
                         <button type="submit" class="btn btn-primary">Create</button>

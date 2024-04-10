@@ -29,6 +29,7 @@ class studentController extends Controller
             'nickname' => 'nullable|string',
             'faculty_id' => 'nullable|string',
             'area_id' => 'nullable|string',
+            'profile_picture' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validation rule for the image
         ]
         );
 
@@ -36,6 +37,15 @@ class studentController extends Controller
 
         $student = new Students;
         $student->fill($request->all());
+
+        if ($request->hasFile('profile_picture')) {
+            $file = $request->file('profile_picture');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $path = $file->storeAs('public/profile_pictures/student_profiles', $filename); // Save the file in the storage/app/public/profile_pictures directory
+            $student->profile_picture = $path; // Corrected variable
+        }
+
+
         $student->save();
 
         return redirect()->route('student.manage')->with('success', 'Students added successfully!');

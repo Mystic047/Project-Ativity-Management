@@ -22,7 +22,7 @@
     <div class="container">
         <div class="card my-5">
             <div class="card-body">
-                <form class="row g-3" action="{{route('professor.create')}}" method="POST">
+                <form class="row g-3" action="{{route('professor.create')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">ID</label>
@@ -55,6 +55,10 @@
                     <div class="col-md-6">
                         <label for="inputCity" class="form-label">area id</label>
                         <input type="text" name='area_id' class="form-control" id="inputCity">
+                    </div>
+                    <div>
+                        <label for="profile_picture">Profile Picture:</label><br>
+                        <input type="file" id="profile_picture" name="profile_picture"><br><br>
                     </div>
                     {{-- <div class="col-md-6">
                         <label for="inputState" class="form-label">ถ้าไม่มีรูปก็เอาออก</label>

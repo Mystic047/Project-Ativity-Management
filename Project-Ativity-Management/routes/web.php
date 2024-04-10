@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\studentController;
 use App\Http\Controllers\professorController;
+use App\Http\Controllers\coordinatorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,20 +47,42 @@ Route::get('/createStuUser', function () {
 
 //Student Management
 Route::controller(studentController::class)->group(function () {
+    //show manage Student page
     Route::get('/manageStudent', 'showManageView')->name('student.manage');
+
+    //Create Student
     Route::get('/createFormStudent', 'showCreateView')->name('student.showCreate');
     Route::post('/createStudent', 'create')->name('student.create');
+
+
 });
 
+//Professor Management
 Route::controller(professorController::class)->group(function () {
+    //show manage Professor page
     Route::get('/manageProfessor', 'showManageView')->name('professor.manage');
+
+    //Create Professor
     Route::get('/createFormProfessor', 'showCreateView')->name('professor.showCreate');
     Route::post('/createProfessor', 'create')->name('professor.create');
 });
 
+//Coordinator Management
+Route::controller(coordinatorController::class)->group(function () {
+    //show manage Professor page
+    Route::get('/manageCoordinator', 'showManageView')->name('coordinator.manage');
+
+    //Create Professor
+    Route::get('/createFormCoordinator', 'showCreateView')->name('coordinator.showCreate');
+    Route::post('/createCoordinator', 'create')->name('coordinator.create');
+});
+
+
+
 Route::get('/ProfessorCreate', function () {
     return view('/admin/createView/professorCreate');
 });
+
 Route::get('/ActivitycoordinatorsManagement', function () {
     return view('/admin/managementView/activitycoordinatorsManage');
 });

@@ -4,24 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use App\Models\professors;
+use App\Models\activity_coordinators;
 
-class professorController extends Controller
+class coordinatorController extends Controller
 {
     public function showManageView()
     {
-        return view('/admin/managementView/professorManage');
+        return view('/admin/managementView/activitycoordinatorsManage');
     }
 
     public function showCreateView()
     {
-        return view('/admin/createView/professorCreate');
+        return view('/admin/createView/activitycoordinatorsCreate');
     }
+
 
     public function create(Request $request)
     {
         $request->validate([
-            'professors_id' => 'required|unique:professors,professors_id',
+            'ac_id' => 'required|unique:activity_coordinators,ac_id',
             'email' => 'nullable|string',
             'password' => 'required|min:8',
             'firstname' => 'nullable|string',
@@ -34,18 +35,18 @@ class professorController extends Controller
 
         Log::debug($request->all());
 
-        $professor = new professors;
-        $professor->fill($request->all());
+        $coordinator = new activity_coordinators;
+        $coordinator->fill($request->all());
 
         if ($request->hasFile('profile_picture')) {
             $file = $request->file('profile_picture');
             $filename = time() . '.' . $file->getClientOriginalExtension();
-            $path = $file->storeAs('public/profile_pictures/professor_profiles', $filename); // Save the file in the storage/app/public/profile_pictures directory
-            $professor->profile_picture = $path; // Save the path in the database
+            $path = $file->storeAs('public/profile_pictures/coordinator_profiles', $filename); // Save the file in the storage/app/public/profile_pictures directory
+            $coordinator->profile_picture = $path; // Save the path in the database
         }
-        $professor->save();
+        $coordinator->save();
 
-        return redirect()->route('professor.manage')->with('success', 'Professor added successfully!');
+        return redirect()->route('coordinator.manage')->with('success', 'coordinator added successfully!');
     }
 
 }
