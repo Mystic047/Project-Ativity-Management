@@ -62,11 +62,16 @@
                             </div>
                             <div class="card-body">
                                 <table class="table table-bordered table-hover mb-4">
+                                    <colgroup>
+                                        <col style="width: 20%;">
+                                        <col style="width: 40%;">
+                                        <col style="width: 40%;">
+                                    </colgroup>
                                     <thead class="table-light">
                                         <tr>
                                             <th class="text-center">ข้อมูล</th>
-                                            <th>ชื่อกิจกรรม</th>
-                                            <th>การรับสมัคร</th>
+                                            <th class="text-center">ชื่อกิจกรรม</th>
+                                            <th class="text-center">การรับสมัคร</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -89,6 +94,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row mt-4">
                     <!-- เพิ่ม Card อีก 2 ใบ -->
                     <div class="col-md-6">
