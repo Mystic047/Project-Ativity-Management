@@ -9,6 +9,7 @@
 </head>
   <body>
     <!-- Login 8 - Bootstrap Brain Component -->
+    <!-- Login 8 - Bootstrap Brain Component -->
 <section class="bg-light p-3 p-md-4 p-xl-5">
     <div class="container">
       <div class="row justify-content-center">
@@ -16,7 +17,7 @@
           <div class="card border-light-subtle shadow-sm">
             <div class="row g-0">
               <div class="col-12 col-md-6">
-                <img class="img-fluid rounded-start w-100 h-100 object-fit-cover" loading="lazy" src="https://scontent.fnak3-1.fna.fbcdn.net/v/t31.18172-8/21950074_1269279859866997_8640836755073465690_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFpppKCnHQ6apQI_uKg_TmFuMw2Ee_0M0e4zDYR7_QzR_m6s5E1RcX3qT5KLom9ewcBbppoDaELIO_IAkejl1bW&_nc_ohc=4nCwuyPaAz8AX_qJtyI&_nc_ht=scontent.fnak3-1.fna&oh=00_AfAeyJwD7BzKI7rvqAkuy4dEYV_WqbyCygi2ke5ooJ5D5Q&oe=662490C4" alt="Welcome back you've been missed!">
+                <img class="img-fluid rounded-start w-100 h-100 object-fit-cover" loading="lazy" src="https://img.freepik.com/free-photo/sunset-silhouettes-trees-mountains-generative-ai_169016-29371.jpg" alt="Welcome back you've been missed!">
               </div>
               <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
                 <div class="col-12 col-lg-11 col-xl-10">
@@ -24,29 +25,32 @@
                     <div class="row">
                       <div class="col-12">
                         <div class="mb-5">
-                          <div class="text-center mb-4">
-                            <a href="#!">
-                              <img src="https://science.bru.ac.th/wp-content/uploads/2018/03/sci-logo-1.jpg" alt="BootstrapBrain Logo" width="175" height="57">
-                            </a>
-                          </div>
-                          <h4 class="text-center">ระบบบริหารงานกิจกรรมนักศึกษา</h4>
+                            <div class="text-center mb-4">
+                                <a href="#!">
+                                  <img src="./assets/img/bsb-logo.svg" alt="BootstrapBrain Logo" width="175" height="57">
+                                  ใส้ logo
+                                </a>
+                              </div>
+                          <h4 class="text-center">Welcome back you've been missed!</h4>
                         </div>
                       </div>
                     </div>
-                    <form action="#!">
+                    <form action="#">
                       <div class="row gy-3 overflow-hidden">
                         <div class="col-12">
-                          <div class="form-floating mb-3">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
-                            <label for="email" class="form-label">Email</label>
+                            <h6>Email</h6> <!-- เพิ่มหัวข้อ Email ที่นี่ -->
+                            <div class="form-floating mb-3">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                              <label for="email" class="form-label">Email</label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-floating mb-3">
-                            <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
-                            <label for="password" class="form-label">Password</label>
+                          <div class="col-12">
+                            <h6>Password</h6> <!-- เพิ่มหัวข้อ Password ที่นี่ -->
+                            <div class="form-floating mb-3">
+                              <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
+                              <label for="password" class="form-label">Password</label>
+                            </div>
                           </div>
-                        </div>
                         <div class="col-12">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
@@ -62,14 +66,7 @@
                         </div>
                       </div>
                     </form>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-center mt-5">
-                          <a href="#!" class="link-secondary text-decoration-none">Create new account</a>
-                          <a href="#!" class="link-secondary text-decoration-none">Forgot password</a>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>

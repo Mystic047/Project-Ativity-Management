@@ -128,3 +128,12 @@ Route::get('/AreaEdit', function () {
 Route::get('/FacultyEdit', function () {
     return view('/admin/editView/facultyEdit');
 });
+Route::get('/Adminlogin', function () {
+    return view('/adminlogin');
+});
+
+
+///เทสเล่น
+Route::get('/Home', function () {
+    return view('/home');
+});

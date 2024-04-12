@@ -66,8 +66,8 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- เพิ่มปุ่ม Login -->
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">ลงชื่อเข้าใช้</button>
-                            <button class="btn btn-primary" type="button">เจ้าหน้าที่</button>
+                            <a href="{{ ('login') }}" class="btn btn-primary me-md-2">ลงชื่อเข้าใช้</a>
+                            <a href="{{ ('Adminlogin') }}" class="btn btn-primary">เจ้าหน้าที่</a>
                           </div>
                     </ul>
                 </div>
