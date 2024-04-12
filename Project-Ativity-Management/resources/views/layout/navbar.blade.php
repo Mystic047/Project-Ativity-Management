@@ -16,15 +16,16 @@
         }
 
         /* ปรับลักษณะของ Navbar ให้แบ่งเป็นสองส่วน */
-        .top-navbar {
+        .bottom-navbar {
             background-color: #ffc000;
             /* สีพื้นหลังส่วนบน */
         }
 
-        .bottom-navbar {
+        .top-navbar {
             background-color: white;
             /* สีพื้นหลังส่วนล่าง */
         }
+
 
         /* ปรับระยะห่างระหว่างไอคอนและข้อความในเมนู Navbar */
         .nav-link i {
@@ -66,8 +67,8 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- เพิ่มปุ่ม Login -->
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <a href="{{ ('login') }}" class="btn btn-primary me-md-2">ลงชื่อเข้าใช้</a>
-                            <a href="{{ ('Adminlogin') }}" class="btn btn-primary">เจ้าหน้าที่</a>
+                            <a href="{{ ('login') }}" class="btn btn-outline-primary">ลงชื่อเข้าใช้</a>
+                            <a href="{{ ('Adminlogin') }}" class="btn btn-outline-success">เจ้าหน้าที่</a>
                           </div>
                     </ul>
                 </div>
