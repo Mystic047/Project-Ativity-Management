@@ -134,6 +134,6 @@ Route::get('/Adminlogin', function () {
 
 
 ///เทสเล่น
-Route::get('/Home', function () {
-    return view('/home');
+Route::get('/Profile', function () {
+    return view('/profiles');
 });
