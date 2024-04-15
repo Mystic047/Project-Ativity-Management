@@ -137,3 +137,6 @@ Route::get('/Adminlogin', function () {
 Route::get('/Profile', function () {
     return view('/profiles');
 });
+Route::get('/ActivityCreate', function () {
+    return view('/activitycreate');
+});
