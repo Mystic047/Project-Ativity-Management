@@ -146,3 +146,6 @@ Route::get('/ActivityView', function () {
 Route::get('/NewManage', function () {
     return view('/admin/managementView/newManage');
 });
+Route::get('/New', function () {
+    return view('new');
+});

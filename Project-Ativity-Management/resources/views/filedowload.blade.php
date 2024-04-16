@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="card-footer text-muted">
-                            <button type="button" class="btn btn-primary">อัปโหลดไฟล์</button>
+                            <a href="{{ ('fileupload') }}" class="btn btn-primary">อัปโหลดไฟล์</a>
                         </div>
                     </div>
                 </div>

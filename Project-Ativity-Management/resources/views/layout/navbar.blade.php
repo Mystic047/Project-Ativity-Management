@@ -86,10 +86,10 @@
                                     หน้าแรก</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-newspaper"></i> ข่าวสาร</a>
+                                <a class="nav-link" href="{{'New'}}"><i class="fas fa-newspaper"></i> ข่าวสาร</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-file-download"></i>
+                                <a class="nav-link" href="{{'filedowload'}}"><i class="fas fa-file-download"></i>
                                     เอกสารดาวน์โหลด</a>
                             </li>
                             <li class="nav-item">
