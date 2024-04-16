@@ -122,7 +122,7 @@
                                     <i class="fas fa-user"></i> โปรไฟล์
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i>
+                                    <li><a class="dropdown-item" href="{{'Profile'}}"><i class="fas fa-cog"></i>
                                             แก้ไขข้อมูล</a>
                                     </li>
                                     <li><a class="dropdown-item" href="#"><i class="fas fa-pen-square"></i>

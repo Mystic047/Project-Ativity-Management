@@ -32,7 +32,7 @@
             </ul>
         </li>
         <li class="dropdown active">
-            <a href="#" class="nav-link has-dropdown"><i class="fas fa-table"></i><span>ข่าวสาร ประชาสัมพันธ์</span></a>
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-envelope"></i><span>ข่าวสาร ประชาสัมพันธ์</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href="">จัดการข้อมูลข่าวสาร</a></li>
             </ul>

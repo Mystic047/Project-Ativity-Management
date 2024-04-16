@@ -140,3 +140,6 @@ Route::get('/Profile', function () {
 Route::get('/ActivityCreate', function () {
     return view('/activitycreate');
 });
+Route::get('/ActivityView', function () {
+    return view('/activityview');
+});
