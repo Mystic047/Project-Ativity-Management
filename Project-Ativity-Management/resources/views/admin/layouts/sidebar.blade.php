@@ -26,15 +26,23 @@
             </ul>
           </li>
         <li class="dropdown active">
-            <a href="#" class="nav-link has-dropdown"><i class="fas fa-table"></i><span>จัดการข้อมูลสาขา</span></a>
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-table"></i><span>จัดการข้อมูลทั่วไป</span></a>
             <ul class="dropdown-menu">
                 <li><a class="nav-link" href=" {{'FacultyManagement'}} ">จัดการข้อมูลสาขา</a></li>
+                <li><a class="nav-link" href=" {{'FacultyManagement'}} ">จัดการข้อมูลกิจกรรม</a></li>
+                <li><a class="nav-link" href=" {{'FacultyManagement'}} ">จัดการข้อมูลเอกสาร</a></li>
             </ul>
         </li>
         <li class="dropdown active">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-envelope"></i><span>ข่าวสาร ประชาสัมพันธ์</span></a>
             <ul class="dropdown-menu">
-                <li><a class="nav-link" href="">จัดการข้อมูลข่าวสาร</a></li>
+                <li><a class="nav-link" href="{{'NewManage'}}">จัดการข้อมูลข่าวสาร</a></li>
+            </ul>
+        </li>
+        <li class="dropdown active">
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-file-pdf"></i><span>รายงาน</span></a>
+            <ul class="dropdown-menu">
+                <li><a class="nav-link" href="{{'NewManage'}}">จัดการข้อมูลข่าวสาร</a></li>
             </ul>
         </li>
 

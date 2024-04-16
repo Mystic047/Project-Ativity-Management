@@ -81,7 +81,7 @@
                         class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center w-100">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
+                                <a class="nav-link active" aria-current="page" href="{{'/'}}"><i
                                         class="fas fa-home"></i>
                                     หน้าแรก</a>
                             </li>
@@ -104,7 +104,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#"><i class="fas fa-calendar"></i>
                                             ปฏิทินกิจกรรม</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-pen-square"></i>
+                                    <li><a class="dropdown-item" href="{{'ActivityView'}}"><i class="fas fa-pen-square"></i>
                                             สมัครกิจกรรม</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
